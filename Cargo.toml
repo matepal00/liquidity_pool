@@ -1,0 +1,7 @@
+[package]
+name = "liquidityPool"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+fixed_math = { path = "./fixed_math" }
