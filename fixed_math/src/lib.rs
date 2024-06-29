@@ -41,7 +41,7 @@ pub fn add(x: u64, y: u64) -> Result<u64, Errors> {
 }
 pub fn multiply(x: u64, y: u64) -> Result<u64, Errors> {
     let max_number_to_multiply: u64 = max_number_to_multiply();
-    if x > max_number_to_multiply || y > max_number_to_multiply {
+    if x > max_number_to_multiply * 1000 || y > max_number_to_multiply {
         return Err(Errors::Overflow);
     }
     let x_int: u64 = integer(x) / multiplyer();
